@@ -1,285 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<%- include('header') %>
-<%- include('sidebar') %>
-<%- include('modals') %>
+  <title>Airport Padel - Flygplatshotellet</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-<!-- Content Wrapper -->
-<div id="content-wrapper" class="d-flex flex-column">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Main Content -->
-  <div id="content">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <%- include('topbar') %>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Begin Page Content -->
-    <div class="container-fluid">
+  <!-- =======================================================
+  * Template Name: Squadfree - v2.2.0
+  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-      <!-- Page Heading -->
-      <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Spots</h1>
-      </div> -->
-      <style>
-        .col-xl-6 {
-          padding-left: 0.75rem;
-          padding-right: 0.75rem;
-        }
-        .fas.fa-star{
-          color: gold;
-        }
-      </style>
+<body>
 
-      <!-- Content Row -->
-      <div class="row">
-        <div class="col-xl-12">
-          <style>
-            /* Set the size of the div element that contains the map */
-            #map {
-              height: 450px;
-              /* The height is 400 pixels */
-              width: 100%;
-              /* The width is the width of the web page */
-            }
-          </style>
-          <!--The div element for the map -->
-          <div id="map" style="border-radius: 5px; margin-bottom: 5px;"></div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
 
-        </div>
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="#"><span><i class="icofont-airplane"></i> Airport Padel</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <div class="row">
-        <!-- Recensioner -->
-        <div class="col-xl-6" style="padding-right: 0.25rem;">
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-primary">Recensioner</h6>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <!-- <li class="active"><a href="#home">Home</a></li> -->
+          <li><a href="#about">Om oss</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="#portfolio">Bilder</a></li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Kontakt</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>Aiport Padel</h1>
+      <h2>Utomhusbanor i världsklass</h2>
+      <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="content">
+              <h3>Välkommen till<br>Airport Padel - Flygplatshotellet.se</h3>
+              <p>
+Nu kör höstsäsongen igång och vi har öppet ända till snön kommer.
+Våra två utebanor, WPT Padelgalis med Mondo STX Supercourt-matta är belägna i Härryda strax utanför Göteborg.
+              </p>
+              <!-- <a href="#" class="about-btn">Om oss <i class="bx bx-chevron-right"></i></a> -->
             </div>
-            <div class="card-body">
-              <div class="review">
-                Launchvänligt
-                </span><span style="float: right;" id="launchFriendly-stars"></span></span>
-                <hr>
-                <div class="review">
-                  Långgrunt
-                  <span style="float: right;" id="shallow-stars"></span>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="icofont-tennis-player"></i>
+                  <h4>Rack</h4>
+                  <p>Vi har jättefina hyrracket från Babolat så har du inget eget rack är det inga problem.
+                    Vi hjälper även till med att hitta rätt racket när ni vill skaffa ett eget.</p>
                 </div>
-                <hr>
-                <div class="review">
-                  Vågor
-                  <span style="float: right;" id="waves-stars"></span>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="icofont-telephone"></i>
+                  <h4>Telefon</h4>
+                  <p>Ni når oss på telefon 031-888800</p>
                 </div>
-                <hr>
-                <div class="review">
-                  Tillgänglighet
-                  <span style="float: right;" id="accesibility-stars"></span>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="icofont-spanner"></i>
+                  <h4>Kurser</h4>
+                  <p>Boka gärna in dig och familjen på en kurs till våren redan nu.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="icofont-light-bulb"></i>
+                  <h4>Ny för padel?</h4>
+                  <p>Är ni nybörjare finns det personal på plats som kan ge er en gratis introduktion.</p>
                 </div>
               </div>
-            </div>
+            </div><!-- End .content-->
           </div>
         </div>
-        <div class="col-xl-6" style="padding-left: 0.25rem;">
 
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-primary">Vindriktningar</h6>
+      </div>
+    </section><!-- End About Section -->
+    <!-- <section>
+      <div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'hVrzy_Pe7cHIkYMoOJ72'});Pixlee.addSimpleWidget({widgetId:'30232'});};</script><script src="http://instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+    </section> -->
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
-            <div class="card-body"
-              style="display: flex; font-size: 1.5rem; text-align: center; justify-content: center;">
-              <div class="arrow-container" style="max-width: 50%">
-                <div class="n-arrow">
-                  <i id="n-arrow" class="fas fa-arrow-alt-circle-down"></i>
-                </div>
-                <div class="nw-ne-arrow">
-                  <i id="ne-arrow" class="fas fa-arrow-alt-circle-right"
-                    style="transform: rotate(45deg);margin-right: 40px;"></i>
-                  <i id="nw-arrow" class="fas fa-arrow-alt-circle-left" style="transform: rotate(-45deg);"></i>
-                </div>
-                <div class="w-e-arrow">
-                  <i id="w-arrow" class="fas fa-arrow-alt-circle-right" style="margin-right: 80px;"></i>
-                  <i id="e-arrow" class="fas fa-arrow-alt-circle-left"></i>
-                </div>
-                <div class="sw-se-arrow">
-                  <i id="sw-arrow" class="fas fa-arrow-alt-circle-right"
-                    style="transform: rotate(-45deg);margin-right: 40px;"></i>
-                  <i id="se-arrow" class="fas fa-arrow-alt-circle-left" style="transform: rotate(45deg);"></i>
-                </div>
-                <div class="n-arrow">
-                  <i id="s-arrow" class="fas fa-arrow-alt-circle-up"></i>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div> -->
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts  section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bx bxl-dribbble"></i>
+              <span data-toggle="counter-up">2</span>
+              <p><strong>WPT banor</strong><br>Med Mondo-gräs</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">3500</span>
+              <p><strong>Glada padelspelare</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">18</span>
+              <p><strong>Timmar öppet per dygn</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">20</span>
+              <p><strong>Lag i ligaspel</strong></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Boka tider</h3>
+          <p> Gå till Matchi för att boka tider på våra banor</p>
+          <a class="cta-btn" href="https://www.matchi.se/facilities/airportpadel" target="_blank">Till Matchi</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Bilder</h2>
+          <p>Se våra instagrambilder</p>
+        </div>
+
+        <!-- <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/instagram/instagram1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/instagram/instagram1.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/instagram/instagram2.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/instagram/instagram2.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/instagram/instagram3.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/instagram/instagram3.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/instagram/instagram4.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Padelspelare om Airport padel</h2>
+          <p>Se vad våra kunder tycker om att spela hos oss.</p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item" data-aos="fade-up">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Superbt
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Bästa banorna i Göteborg
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Sol och padel, vad kan vara bättre
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Superbt
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Så nära, så bra
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= 
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    -- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
+              <h3>Airport Padel - Flygplatshotellet</h3>
+              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Om oss</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
         </div>
       </div>
     </div>
-    <script>
-      
-      let map;
-      let addMarkerMap;
-      let markersArray = [];
 
-      const sweden = { lat: 58.319322, lng: 14.285850 };
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Airport Padel - Flygplatshotellet</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
-      function initMap() {
-        const mapOptions = {
-          zoom: 6,
-          center: sweden
-        };
-        map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        addMarkerMap = new google.maps.Map(document.getElementById("add-marker-map"), mapOptions);
-        addMarkerMap.addListener('click', function (e) {
-          console.log(e);
-          placeMarker(e.latLng);
-        });
-        const centerControlDiv = document.createElement("div");
-        CenterControl(centerControlDiv, map);
-        map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
-        JSON.parse('<%-JSON.stringify(spots)%>').forEach(spot => createMarkers(map, spot));
-      }
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-      // För modalens "lägga till" funktion
-      var marker;
-      function placeMarker(location) {
-        if (marker) {
-          marker.setPosition(location);
-        } else {
-          marker = new google.maps.Marker({
-            position: location,
-            map: addMarkerMap
-          });
-        }
-        document.querySelector('input[name="coordinatesLat"]').value = marker.getPosition().lat();
-        document.querySelector('input[name="coordinatesLng"]').value = marker.getPosition().lng();
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
 
-      }
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-      function createMarkers(map, spot) {
-        const marker = new google.maps.Marker({
-          position: { lat: parseFloat(spot.lat), lng: parseFloat(spot.lng) },
-          map: map,
-          metadata: { id: spot._id },
-          label: spot.name.substring(0, 2)
-
-        });
-        marker.addListener('click', function () {
-          map.setZoom(14);
-          map.setCenter(marker.getPosition());
-        });
-        
-        const infowindow = new google.maps.InfoWindow({
-          content: `<strong>${spot.name}</strong>`
-        });
-        google.maps.event.addListener(marker, "mouseover", () => {
-          infowindow.open(map, marker);
-        });
-
-        google.maps.event.addListener(marker, 'mouseout', () => {
-          infowindow.close(map, marker);
-        });
-        google.maps.event.addListener(marker, 'click', () => {
-          setStars(spot);
-        });
-      }
-
-      function setWinddirections(spot) {
-        var directions = ['N', 'NE', 'NW', 'W', 'E', 'SW', 'SE', 'S'];
-
-      }
-      function setStars(spot) {
-        var star = '<i class="fas fa-star"></i>';
-        var nonStar = '<i class="far fa-star"></i>';
-        Object.keys(spot.reviews).forEach(reviewType => {
-          let stars = '';
-          if (spot.reviews[reviewType]) {
-            //10 stjärnor
-            for (let i = 0; i < 10; i++) {
-              if (spot.reviews[reviewType] > i) {
-                stars = stars + star;
-              }
-              else {
-                stars = stars + nonStar;
-              }
-            }
-            document.querySelector(`#${reviewType}-stars`).innerHTML = `(${spot.reviews[reviewType]}/10) ${stars}`;
-          } else {
-            document.querySelector(`#${reviewType}-stars`).innerHTML = "";
-          }
-        })
-      }
-
-      // function CenterControl(controlDiv, map) {
-      //   // Set CSS for the control border.
-      //   const controlUI = document.createElement("div");
-      //   controlUI.style.backgroundColor = "#fff";
-      //   controlUI.style.border = "2px solid #fff";
-      //   controlUI.style.borderRadius = "3px";
-      //   controlUI.style.boxShadow = "0 2px 6px rgba(0,0,0,.3)";
-      //   controlUI.style.cursor = "pointer";
-      //   controlUI.style.marginBottom = "22px";
-      //   controlUI.style.textAlign = "center";
-      //   controlUI.title = "Click to recenter the map";
-      //   controlDiv.appendChild(controlUI);
-      //   // Set CSS for the control interior.
-      //   const controlText = document.createElement("div");
-      //   controlText.style.color = "rgb(25,25,25)";
-      //   controlText.style.fontFamily = "Roboto,Arial,sans-serif";
-      //   controlText.style.fontSize = "16px";
-      //   controlText.style.lineHeight = "38px";
-      //   controlText.style.paddingLeft = "5px";
-      //   controlText.style.paddingRight = "5px";
-      //   controlText.innerHTML = '<i class="fas fa-crosshairs"></i> Översikt';
-      //   controlUI.appendChild(controlText);
-      //   // Setup the click event listeners: simply set the map to Chicago.
-      //   controlUI.addEventListener("click", () => {
-      //     map.setCenter(sweden);
-      //     map.setZoom(6);
-      //     // $('#createSpot').show();
-      //   });
-      // };
-
-      function CenterControl(controlDiv, map) {
-        // Set CSS for the control border.
-        const controlUI = document.createElement("div");
-        controlUI.style.backgroundColor = "#fff";
-        controlUI.style.border = "2px solid #fff";
-        controlUI.style.borderRadius = "3px";
-        controlUI.style.boxShadow = "0 2px 6px rgba(0,0,0,.3)";
-        controlUI.style.cursor = "pointer";
-        controlUI.style.marginBottom = "22px";
-        controlUI.style.textAlign = "center";
-        controlUI.title = "Click to recenter the map";
-        controlDiv.appendChild(controlUI);
-        // Set CSS for the control interior.
-        const controlText = document.createElement("div");
-        controlText.style.color = "rgb(25,25,25)";
-        controlText.style.fontFamily = "Roboto,Arial,sans-serif";
-        controlText.style.fontSize = "16px";
-        controlText.style.lineHeight = "38px";
-        controlText.style.paddingLeft = "5px";
-        controlText.style.paddingRight = "5px";
-        controlText.innerHTML = '<i class="fas fa-crosshairs"></i> Översikt';
-        controlUI.appendChild(controlText);
-        // Setup the click event listeners: simply set the map to Chicago.
-        controlUI.addEventListener("click", () => {
-          $('#createSpot').modal('show');
-        });
-      }
-    </script>
-
-    <script defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALwtxzEXRqd-P7f8tLoHe7Fb4WDV3BCJA&callback=initMap"></script>
-  </div>
-  <!-- /.container-fluid -->
-
-</div>
-<!-- End of Main Content -->
-
-
-<%- include('footer') %>
-<!-- Page level plugins -->
 </body>
 
 </html>
